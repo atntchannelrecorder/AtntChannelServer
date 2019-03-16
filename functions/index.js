@@ -1,8 +1,22 @@
 const functions = require('firebase-functions');
+const admin = require('firebase-admin');
+var serviceAccount = require('./atnt-channel-recorder-firebase-adminsdk-jv1s9-dbe961ed32.json');
+const express = require('express');
 
-// // Create and Deploy Your First Cloud Functions
-// // https://firebase.google.com/docs/functions/write-firebase-functions
-//
-// exports.helloWorld = functions.https.onRequest((request, response) => {
-//  response.send("Hello from Firebase!");
-// });
+
+admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+    databaseURL: "https://atnt-channel-recorder.firebaseio.com"
+});
+
+
+
+
+
+const appGetChannels = express();
+appGetChannels.get('', (req, res) => {
+    res.send('Hello world from Firebase 2');
+});
+
+
+exports.helloWorld = functions.https.onRequest(appGetChannels);
