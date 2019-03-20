@@ -36,6 +36,19 @@ appPostShow.post('', (req, res) => {
 exports.postShow = functions.https.onRequest(appPostShow);
 
 
+//Updates the entire database with new data
+const appUpdateShow = express();
+appUpdateShow.get('', (req, res) => {
+
+    var channel_1_Ref = db.collection(CHANNEL_1_COLLECTION);
+    var channel_2_Ref = db.collection(CHANNEL_2_COLLECTION);
+    var channel_3_Ref = db.collection(CHANNEL_3_COLLECTION);
+    
+    var milliseconds = (new Date).getTime();
+    res.status(200).send('OK' + milliseconds);
+});
+exports.getUpdatedShows = functions.https.onRequest(appUpdateShow);
+
 const appGetChannels = express();
 appGetChannels.get('', (req, res) => {
     var channelNumber = req.query.channel_number;

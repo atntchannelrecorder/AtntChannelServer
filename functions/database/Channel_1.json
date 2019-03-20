@@ -1,0 +1,61 @@
+
+[
+    {
+        "id": 101,
+        "title": "Aquaman",
+        "startTime": 1552760000,
+        "duration": 3600,
+        "poster": "https://firebasestorage.googleapis.com/v0/b/atnt-channel-recorder.appspot.com/o/channel_3%2Fbleacher-report.png?alt=media&token=8b41fa80-4d89-4744-b6ed-2f5ff1977076"
+    },
+    {
+        "id": 102,
+        "title": "Batman v Superman",
+        "startTime": 1552770000,
+        "duration": 7200,
+        "poster": "https://firebasestorage.googleapis.com/v0/b/atnt-channel-recorder.appspot.com/o/channel_1%2Fbatman-v-superman.jpg?alt=media&token=37deff8b-9e8f-4bdd-a00b-9fcb5f45a703"
+    },
+    {
+        "id": 103,
+        "title": "Harry Potter",
+        "startTime": 1552780000,
+        "duration": 3600,
+        "poster": "https://firebasestorage.googleapis.com/v0/b/atnt-channel-recorder.appspot.com/o/channel_1%2Fharry-potter.jpeg?alt=media&token=4228245f-cf9d-4510-8b83-23c81a20a6fd"
+    },
+    {
+        "id": 104,
+        "title": "Justice League",
+        "startTime": 1552790000,
+        "duration": 7200,
+        "poster": "https://firebasestorage.googleapis.com/v0/b/atnt-channel-recorder.appspot.com/o/channel_1%2Fjustice-league.jpg?alt=media&token=b8cc5bb7-e764-4481-a7d1-70f043c39b8f"
+    },
+    {
+        "id": 105,
+        "title": "Man of Steel",
+        "startTime": 1552800000,
+        "duration": 7200,
+        "poster": "https://firebasestorage.googleapis.com/v0/b/atnt-channel-recorder.appspot.com/o/channel_1%2Fman-of-steel.jpg?alt=media&token=8dc4bb61-d977-4c1b-bf6a-fcea061906f9"
+    },
+    {
+        "id": 106,
+        "title": "National Treasure",
+        "startTime": 1552810000,
+        "duration": 3600,
+        "poster": "https://firebasestorage.googleapis.com/v0/b/atnt-channel-recorder.appspot.com/o/channel_1%2Fnational-treasure.jpg?alt=media&token=1fb80485-dd81-4e3b-9be6-e586937a60cd"
+    },
+    {
+        "id": 107,
+        "title": "Wonder Woman",
+        "startTime": 1552820000,
+        "duration": 7200,
+        "poster": "https://firebasestorage.googleapis.com/v0/b/atnt-channel-recorder.appspot.com/o/channel_1%2Fwonderwoman.jpg?alt=media&token=2cbaa79d-1698-49bc-9349-aabf9b74d9c6"
+    }
+]
+
+
+
+
+
+
+
+
+
