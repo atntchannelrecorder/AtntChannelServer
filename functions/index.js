@@ -57,22 +57,28 @@ appUpdateShow.get('', (req, res) => {
     //Remove user's current recording too
     batch.update(userRef, {currentRecording: null});
 
-    var milliSecondOffSet = Math.floor(currentMillis/1000);
+    var milliSecondOffSet = Math.floor(currentMillis/1000/3600) * 3600;
 
     for (var i = 0; i < channel_1_json.length; i++) {
         channel_1_json[i].startTime = milliSecondOffSet;
         milliSecondOffSet += (channel_1_json[i].duration);
         batch.set(channel_1_Ref.doc('' + channel_1_json[i].id), channel_1_json[i]);
     }
-    for (var i = 0; i < channel_2_json.length; i++) {
-        channel_2_json[i].startTime = milliSecondOffSet;
-        milliSecondOffSet += (channel_2_json[i].duration);
-        batch.set(channel_2_Ref.doc('' + channel_2_json[i].id), channel_2_json[i]);
+
+    milliSecondOffSet = Math.floor(currentMillis/1000/3600) * 3600;
+
+    for (var j = 0; j < channel_2_json.length; j++) {
+        channel_2_json[j].startTime = milliSecondOffSet;
+        milliSecondOffSet += (channel_2_json[j].duration);
+        batch.set(channel_2_Ref.doc('' + channel_2_json[j].id), channel_2_json[j]);
     }
-    for (var i = 0; i < channel_3_json.length; i++) {
-        channel_3_json[i].startTime = milliSecondOffSet;
-        milliSecondOffSet += (channel_3_json[i].duration );
-        batch.set(channel_3_Ref.doc('' + channel_3_json[i].id), channel_3_json[i]);
+
+    milliSecondOffSet = Math.floor(currentMillis/1000/3600) * 3600;
+
+    for (var k = 0; k < channel_3_json.length; k++) {
+        channel_3_json[k].startTime = milliSecondOffSet;
+        milliSecondOffSet += (channel_3_json[k].duration );
+        batch.set(channel_3_Ref.doc('' + channel_3_json[k].id), channel_3_json[k]);
     }
 
     return batch.commit().then(result => {
@@ -87,14 +93,19 @@ const appGetChannels = express();
 appGetChannels.get('', (req, res) => {
     var channelNumber = req.query.channel_number;
     var channelCol = 'channel_' + channelNumber;
+    var first = db.collection(channelCol);
 
-    
+    var currentMillis = (new Date).getTime();
+    var currentSeconds = Math.floor(currentMillis/1000/3600) * 3600;
+    var futureSeconds = currentSeconds + 6 * 3600;
 
-    var first = db.collection(channelCol).limit(10);
     return first.get().then((snapshot) => {
         var result = [];
         snapshot.forEach(doc => {
-            result.push(doc.data());
+            var program = doc.data();
+            if(program.startTime > currentSeconds && program.startTime < futureSeconds) {
+                result.push(doc.data());
+            }
         });
         return res.send(result);
     }).catch(error => {

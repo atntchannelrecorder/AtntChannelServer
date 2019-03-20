@@ -48,6 +48,13 @@
         "startTime": 1552820000,
         "duration": 1800,
         "poster": "https://firebasestorage.googleapis.com/v0/b/atnt-channel-recorder.appspot.com/o/channel_1%2Fwonderwoman.jpg?alt=media&token=2cbaa79d-1698-49bc-9349-aabf9b74d9c6"
+    },
+    {
+        "id": 108,
+        "title": "Wonder Woman part 2",
+        "startTime": 1552820000,
+        "duration": 5400,
+        "poster": "https://firebasestorage.googleapis.com/v0/b/atnt-channel-recorder.appspot.com/o/channel_1%2Fwonderwoman.jpg?alt=media&token=2cbaa79d-1698-49bc-9349-aabf9b74d9c6"
     }
 ]
 
