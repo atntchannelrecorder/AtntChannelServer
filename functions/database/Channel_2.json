@@ -11,28 +11,28 @@
         "id": 202,
         "title": "Last Week Tonight",
         "startTime": 1552770000,
-        "duration": 7200,
+        "duration": 1800,
         "poster": "https://firebasestorage.googleapis.com/v0/b/atnt-channel-recorder.appspot.com/o/channel_2%2Flast-week-tonight.jpeg?alt=media&token=ab3a1433-dfaf-495b-816f-26fcb20215b8"
     },
     {
         "id": 203,
         "title": "Silicon Valley",
         "startTime": 1552780000,
-        "duration": 3600,
+        "duration": 1800,
         "poster": "https://firebasestorage.googleapis.com/v0/b/atnt-channel-recorder.appspot.com/o/channel_2%2Fsilicon-valley.png?alt=media&token=9679b819-c201-4465-8dd1-25a429261df1"
     },
     {
         "id": 204,
         "title": "True Detective",
         "startTime": 1552790000,
-        "duration": 7200,
+        "duration": 3600,
         "poster": "https://firebasestorage.googleapis.com/v0/b/atnt-channel-recorder.appspot.com/o/channel_2%2Ftrue-detective.jpeg?alt=media&token=0a33a02d-fb03-4b24-b6f1-d22533f1e9ae"
     },
     {
         "id": 205,
         "title": "Westworld",
         "startTime": 1552800000,
-        "duration": 7200,
+        "duration": 3600,
         "poster": "https://firebasestorage.googleapis.com/v0/b/atnt-channel-recorder.appspot.com/o/channel_2%2Fwestworld.jpg?alt=media&token=c4e770f8-bb19-4105-9b5a-3d3e614b4b1d"
     }
 ]

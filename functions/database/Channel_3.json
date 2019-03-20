@@ -4,28 +4,28 @@
         "id": 301,
         "title": "Bleacher Report",
         "startTime": 1552760000,
-        "duration": 3600,
+        "duration": 1800,
         "poster": "https://firebasestorage.googleapis.com/v0/b/atnt-channel-recorder.appspot.com/o/channel_3%2Fbleacher-report.png?alt=media&token=8b41fa80-4d89-4744-b6ed-2f5ff1977076"
     },
     {
         "id": 302,
         "title": "Celtics",
         "startTime": 1552770000,
-        "duration": 7200,
+        "duration": 1800,
         "poster": "https://firebasestorage.googleapis.com/v0/b/atnt-channel-recorder.appspot.com/o/channel_3%2Fceltics.jpg?alt=media&token=99add92c-55d4-435f-b703-3bb265a00848"
     },
     {
         "id": 303,
         "title": "Lakers",
         "startTime": 1552780000,
-        "duration": 3600,
+        "duration": 7200,
         "poster": "https://firebasestorage.googleapis.com/v0/b/atnt-channel-recorder.appspot.com/o/channel_3%2Flakers.jpg?alt=media&token=a37ca377-28b1-4922-b22a-43d158bb6074"
     },
     {
         "id": 304,
         "title": "NBA on TNT",
         "startTime": 1552790000,
-        "duration": 7200,
+        "duration": 3600,
         "poster": "https://firebasestorage.googleapis.com/v0/b/atnt-channel-recorder.appspot.com/o/channel_3%2Fnba-on-tnt.jpg?alt=media&token=51a2ddb1-7daa-46b0-8763-7f1dabec562d"
     },
     {
